@@ -1,8 +1,12 @@
-const swiper = new Swiper('.swiper', {
+/* swiper start */
+
+const swiperTop = new Swiper('.top__swiper', {
     // Optional parameters
-    loop: true,
-  
-    
+    effect: 'fade',
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
   
     // Navigation arrows
     navigation: {
@@ -10,4 +14,16 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     },
     
+  });
+
+  /* swiper end */
+
+  const swiperAbout = new Swiper(".about__slider", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    freeMode: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
