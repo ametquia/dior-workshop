@@ -112,17 +112,22 @@ margin-bottom: 20px;
 }
 
 .top-slide__btn{
-color: #7449BB;
+    margin-left: auto;
+
+}
+
+.button{
+ 
+    color: #7449BB;
 text-transform: uppercase;
 font-weight: 700px;
 padding: 21px 55px;
 border: 1px solid #7449BB;
 display: inline-block;
-margin-left: auto;
 transition: all .3s ease;
 }
 
-.top-slide__btn:hover{
+.button:hover{
     color: #fff;
     background-color:#7449BB;
 }
@@ -166,7 +171,8 @@ font-style: italic;
 
 /* about start */
 .about{
-    margin-bottom: 150px;
+    margin-bottom: 100px;
+    
 }
 
 .about__inner{
@@ -208,4 +214,94 @@ font-style: italic;
 .about__item-title{
     margin-bottom: 20px;
 }
+
+.about__slider{
+    width: 1600px;
+    padding-left: 200px;/* манипуляции для arrow */
+    margin-left: -200px;
+    padding-bottom: 20px;
+}
+
+.about__item-title{
+    margin-left: 20px;
+}
+
+.about__arrow{
+    margin-left: -198px;
+}
+
+.container-arrow.swiper-button-next.swiper-button-disabled, 
+.swiper-button-prev.swiper-button-disabled{
+    opacity: 1;
+}
+
+
 /* about finish */
+
+
+/* description burger start */
+.accordeon{
+   margin-bottom: 223px;
+   padding-bottom: 150px;
+}
+
+.accordeon__inner{
+    padding-left: 200px;
+
+}
+
+.accordeon__item{
+    border-bottom: 1px solid #000;
+    padding: 50px 101px 20px 0;
+    position: relative;
+}
+
+.accordeon__item::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 51px;
+    background-image: url(../images/arrows/Arrow-down.svg);
+    right: 85px;
+    top: 50px;
+}
+
+
+.accordeon__item:last-child::after{
+    content: '';
+    position: absolute;
+    background-image: url(../images/acordeon-img.jpg);
+    width: 65px;
+    height: 120px;
+    bottom: -73px;
+    left: 268px;
+}
+
+.accordeon__triger{
+    display: flex;
+    justify-content: space-between;
+
+}
+.accordeon__triger-title{
+    text-transform: uppercase;
+    font-size: 24px;
+    flex-basis: 300px;
+ }
+
+.accordeon__triger-text{
+    font-size: 14px;
+    flex-basis: 387px;
+    margin-right: 104px;
+ 
+}
+
+.accordeon__content{
+    margin-bottom: 10px;
+    display: none;
+}
+
+.accordeon__content p{
+    margin-bottom: 10px;
+}
+
+/* description burger finish */
