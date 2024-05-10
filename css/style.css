@@ -216,7 +216,7 @@ font-style: italic;
 }
 
 .about__slider{
-    width: 1600px;
+    width: 1800px;
     padding-left: 200px;/* манипуляции для arrow */
     margin-left: -200px;
     padding-bottom: 20px;
@@ -242,7 +242,6 @@ font-style: italic;
 /* description burger start */
 .accordeon{
    margin-bottom: 223px;
-   padding-bottom: 150px;
 }
 
 .accordeon__inner{
@@ -252,8 +251,10 @@ font-style: italic;
 
 .accordeon__item{
     border-bottom: 1px solid #000;
-    padding: 50px 101px 20px 0;
+    padding: 0px 101px 0px 0;
     position: relative;
+    padding-bottom: 20px;
+
 }
 
 .accordeon__item::before{
@@ -280,16 +281,17 @@ font-style: italic;
 .accordeon__triger{
     display: flex;
     justify-content: space-between;
-
+    cursor: pointer;
+    padding-top: 50px;
 }
 .accordeon__triger-title{
     text-transform: uppercase;
     font-size: 24px;
     flex-basis: 300px;
+    padding-bottom: 43px;
  }
 
 .accordeon__triger-text{
-    font-size: 14px;
     flex-basis: 387px;
     margin-right: 104px;
  
@@ -297,7 +299,11 @@ font-style: italic;
 
 .accordeon__content{
     margin-bottom: 10px;
+    padding-bottom: 20px;
     display: none;
+}
+.accordeon__item--active .accordeon__content{
+    display:block;
 }
 
 .accordeon__content p{
