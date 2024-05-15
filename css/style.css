@@ -180,14 +180,14 @@ font-style: italic;
     font-family: "Playfair Display", serif;
     font-weight: 400;
     font-size: 32px;
-    line-height: 1.34px;
+    line-height: 1.34;
     text-transform: uppercase;
     max-width: 185px;
     margin-bottom: 20px;/* отступ снизу */
 }
 
 .about__textbox{
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     display: flex;
     justify-content: space-between;  
     align-items: flex-end;/* что-бы прижимало к низу */
@@ -307,3 +307,42 @@ font-style: italic;
 }
 
 /* description burger finish */
+
+/* products start */
+
+.products {
+    margin-bottom: 150px;
+}
+
+.products__inner {
+
+}
+
+.products__title {
+    font-family: "Playfair Display", serif;
+    line-height: 1.34;
+    font-style: 32px;
+    width: 100px;
+}
+.products__items {
+    display: flex;
+    gap: 20px; 
+}
+.products__item {
+}
+.products__item--step {
+   /*  text-align: center;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase; */
+}
+.products__item--img {
+}
+.products__item--name {
+/*     text-align: center;
+ */}
+.products__item--price {
+}
+
+/* products end */
+
