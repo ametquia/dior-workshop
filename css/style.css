@@ -390,3 +390,58 @@ margin-bottom: 10px;
 
 /* video end */
 
+
+/* footer start */
+
+.footer {
+    background-color: #C4A9CD;
+    padding: 66px 0 100px;
+}
+
+.footer__inner {
+  
+}
+.footer__top {
+  display: flex;
+margin-bottom: 70px;
+  gap: 0 70px;
+  justify-content: space-between;
+}
+.footer__logo {
+}
+
+.footer__item-form{
+  position: relative;
+}
+
+.footer__item-title{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footer__item-input{  /* форма почты  */
+   width: 100%;
+   display: block;
+   padding: 10px 0;
+   border: none;
+   border-bottom: 1px solid #000;
+   background-color: #C4A9CD;
+   font-family: "Inter", sans-serif;/*  строка набора  */
+    font-weight: 400;
+    font-size: 14px;
+    color: #1B1B1B;
+}
+
+.footer__item-input::placeholder{ /* как выглядет e-mail надпись */
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: 12px;
+    color: #000;
+    opacity: 0,4;
+}
+
+.footer__item-btn{
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
